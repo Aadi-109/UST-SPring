@@ -1,0 +1,103 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MST Website Design</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/mstlogo.png"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+            <h1>Our Courses</h1>
+    </section>
+    
+    
+<!---------- course ----------->
+    
+<section class="course">
+    <h1>Courses We Offer</h1>
+    <p>We offer 3 types of courses.</p>
+    <div class="row">
+        <div class="course-col">
+            <h3>4 Week Course</h3>
+            <p>Perfect for a quick skill boost, our 4-week courses provide focused content that fits into any busy schedule. Dive into the essentials and start applying new skills right away.</p>
+        </div>
+        <div class="course-col">
+            <h3>6 Week Course</h3>
+            <p>Offering a deeper learning experience, our 6-week courses cover foundational skills with time for practical application. This course length allows for a balanced, comprehensive study of key topics.</p>
+        </div>
+        <div class="course-col">
+            <h3>8 Week Course</h3>
+            <p>Our most immersive option, the 8-week courses, delve deeply into complex subjects, offering hands-on projects and guided expertise. Ideal for those seeking mastery and in-depth understanding.</p>
+        </div>
+    </div>
+</section>
+    
+<!---------- Facilities ---------->
+    
+<section class="facility">
+    <h1>Our Features</h1>
+    <p>Following are a few of our many helpful features.</p>
+        <div class="row">
+            <div class="facility-col">
+                <img src="images/f1.webp">
+                <h3>Personalized Learning Paths</h3>
+                <p>Tailored courses and recommendations adapt to each learner's goals and progress, ensuring a unique learning experience.</p>
+            </div>
+            <div class="facility-col">
+                <img src="images/f2.webp">
+                <h3>Interactive Content and Assessments</h3>
+                <p> Engaging videos, quizzes, and hands-on activities make learning active and help reinforce key concepts.</p>
+            </div>
+            <div class="facility-col">
+                <img src="images/f3.webp">
+                <h3>Expert-Led Instruction </h3>
+                <p>Courses are developed and led by industry experts, providing high-quality insights and real-world knowledge.</p>
+            </div>
+        </div>
+</section>
+    
+<!-------- footer ---------->
+
+<section class="footer">
+        <h4>About Us</h4>
+        <p>Our learning platform offers personalized, engaging courses designed to help learners acquire new skills and knowledge at their own pace. <br>With interactive content and expert-led instruction, we make education accessible and enjoyable for everyone.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>made with <i class="fa fa-heart-o"></i> by Colin Joseph</p>
+</section>    
+  
+  
+<!----JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>  
+    
+</body>
+</html>    
